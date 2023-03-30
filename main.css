@@ -1,0 +1,151 @@
+/* Resete */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%; 
+    padding: 20px;
+    background-color:hsl(221, 205%, 7%);
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+                         /* contenido izquierdo*/
+.left-container {
+    display: flex;
+    flex-flow: column wrap;
+    color: whitesmoke;
+    font-size: 1rem;
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 35vw;
+    min-width: 270px;
+    overflow: hidden;
+}
+
+.foto {
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: left;
+    padding: 3px 0;
+    margin: 0 0 0.6em ;
+    border-bottom: 2px white solid;
+    font-size: 2.4em;
+}
+
+h2 {
+    margin-bottom: 8px;
+    font-size: 2em;
+}
+
+.text {
+    margin-top: 6px;
+    font-size: 1.2rem;
+}
+                           
+                                      /* contenido derecho*/
+.right-container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    max-width: 32vw;
+    min-width: 270px;
+    background-color: hsla(209, 48%, 49%, 0.671);
+    padding: 20px;
+    margin: 80px auto 62px;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    height: 70%;
+}
+
+.form, #consulta {
+    width: 100%;
+    margin: 28px auto 0px;
+}
+
+.data input {
+    width: 80%;
+    height: 1.7rem;
+    margin: 5px auto;
+}
+
+.right-container h2 {
+    font-size: 4vh;
+    text-shadow: 1.5px 1.5px 6px white;
+    text-align: center;
+}
+
+.right-container p {
+    font-size: 1.2rem;
+}
+
+#submit {
+    margin: 1.5rem auto;
+    padding: 15px;
+    background-color: darkblue;
+    color: white;
+    font-size: 0.8rem;
+    border-style: none;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+
+.main {
+    max-width: 85%;
+    margin: 5px auto;
+    overflow: hidden;
+}
+
+                          /* Medias*/
+                     
+ @media screen and  (min-width:750px){
+    .main {
+        display: flex;
+        flex-grow: initial;
+    }    
+}   
+@media screen and (max-width: 750px) {
+    .left-container {
+        margin-top: 0;
+        margin: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .right-container {
+        width: 50%;
+        margin: auto;
+        padding-top: 0;
+        padding-bottom: 5px;
+        
+    }
+    .text {
+        font-size: 12px;
+        letter-spacing: 0.6px;
+        text-align: justify;
+        margin-bottom: 6px;
+    }
+    h1 {
+        margin-bottom: 0;
+    }
+    .left-container h2 {
+        font-size: 24px;
+        margin-top: 12px;
+        padding-top: 0;
+        padding-bottom: 5px;
+    }
+}
