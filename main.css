@@ -78,6 +78,10 @@ h2 {
     margin: 28px auto 0px;
 }
 
+input:hover {
+    box-shadow: 2px 2px 4px black;
+}
+
 .data input {
     width: 80%;
     height: 1.7rem;
@@ -103,6 +107,14 @@ h2 {
     border-style: none;
     border-radius: 5px;
     letter-spacing: 2px;
+    box-shadow: 2px 4px 5px blueviolet;
+}
+
+#submit:hover {
+    background-color: aqua;
+    cursor: pointer;
+    color: black;
+    transition: 0.5s;
 }
 
 .main {
